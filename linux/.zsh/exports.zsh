@@ -1,5 +1,5 @@
 export PATH=/usr/local/bin:$PATH
-export CDPATH=.:~/src:~/src/personal:~/src/opensource:~/src/relevance:~/Documents
+export CDPATH=.:~/src:~/src/personal:~/src/opensource:~/src/relevance:~/src/configs:~/Documents
 
 # Set default console Java to 1.6
 # export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
