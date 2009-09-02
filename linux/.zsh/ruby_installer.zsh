@@ -1,3 +1,25 @@
+function install_ruby_186 {
+  mkdir -p ~/.ruby_versions && cd /tmp
+  curl -L -O ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.6-p383.tar.gz &&
+  tar xzf ruby-1.8.6-p383.tar.gz &&
+  cd ruby-1.9.1-p243 &&
+  ./configure --prefix=$HOME/.ruby_versions/ruby_186 --enable-shared &&
+  make && make install &&
+  rm -rf ruby-1.8.6-p383.tar.gz ruby-1.8.6-p383 &&
+  use_ruby_186 && install_basic_gems && cd ~
+}
+
+function install_ruby_191 {
+  mkdir -p ~/.ruby_versions && cd /tmp
+  curl -L -O ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.1-p243.tar.gz &&
+  tar xzf ruby-1.9.1-p243.tar.gz &&
+  cd ruby-1.9.1-p243 &&
+  ./configure --prefix=$HOME/.ruby_versions/ruby_191 --enable-shared &&
+  make && make install &&
+  rm -rf ruby-1.9.1-p243.tar.gz ruby-1.9.1-p243 &&
+  use_ruby_191 && install_basic_gems && cd ~
+}
+
 function install_jruby_131 {
   mkdir -p ~/.ruby_versions && cd ~/.ruby_versions &&
   curl -O -L --silent http://dist.codehaus.org/jruby/1.3.1/jruby-bin-1.3.1.zip &&
@@ -12,26 +34,11 @@ function install_jruby_131 {
   cd ~
 }
 
-function install_ruby_191 {
-  mkdir -p ~/.ruby_versions && cd /tmp
-  curl -L -O ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.1-p243.tar.gz &&
-  tar xzf ruby-1.9.1-p243.tar.gz &&
-  cd ruby-1.9.1-p243 &&
-  ./configure --prefix=$HOME/.ruby_versions/ruby_191 --enable-shared &&
-  make && make install &&
-  rm -rf ruby-1.9.1-p243.tar.gz ruby-1.9.1-p243 &&
-  use_ruby_191 && install_basic_gems && cd ~
-}
-
-function install_ruby_186 {
-  mkdir -p ~/.ruby_versions && cd /tmp
-  curl -L -O ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.6-p383.tar.gz &&
-  tar xzf ruby-1.8.6-p383.tar.gz &&
-  cd ruby-1.9.1-p243 &&
-  ./configure --prefix=$HOME/.ruby_versions/ruby_186 --enable-shared &&
-  make && make install &&
-  rm -rf ruby-1.8.6-p383.tar.gz ruby-1.8.6-p383 &&
-  use_ruby_186 && install_basic_gems && cd ~
+function install_rubygems {
+  cd /tmp
+  curl -L -O http://rubyforge.org/frs/download.php/60718/rubygems-1.3.5.tgz
+  tar xzf rubygems-1.3.5.tgz
+  ruby setup.rb
 }
 
 function install_basic_gems {
