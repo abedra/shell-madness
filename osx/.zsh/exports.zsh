@@ -1,8 +1,8 @@
 # Currently this path is appendend to dynamically when picking a ruby version
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/opt/local/lib/postgresql83/bin/:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/opt/local/lib/postgresql84/bin/:$PATH
 
 # Our list of directorys we can cd to from anywhere
-export CDPATH=.:~/src:~/src/abedra:~/src/opensource:~/src/relevance
+export CDPATH=.:~/src:~/src/personal:~/src/opensource:~/src/relevance:~/src/configs:~/Documents
 
 # Add macports man pages to the man path
 export MANPATH=/opt/local/share/man:$MANPATH
@@ -27,7 +27,4 @@ export LESS=ce3M
 export ARCHFLAGS='-arch i386'
 
 # Set macvim with flag to wait for console (git commit compat) as our EDITOR
-export EDITOR="emacs"
-
-export ACTIVEMQ_HOME="~/apache-activemq-5.2.0/"
-export ACTIVEMQ_BASE="~/apache-activemq-5.2.0/"
+export EDITOR="mate"

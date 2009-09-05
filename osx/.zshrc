@@ -12,4 +12,5 @@ source ~/.zsh/history.zsh
 source ~/.zsh/ruby_switcher.zsh
 source ~/.zsh/ruby_installer.zsh
 
-use_ruby_from_leopard
+ssh-add
+use_ruby

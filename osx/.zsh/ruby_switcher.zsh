@@ -1,22 +1,22 @@
 export ORIGINAL_PATH=$PATH
 
-function use_ruby_from_leopard {
- export MY_RUBY_HOME=/System/Library/Frameworks/Ruby.framework/Versions/Current/usr
+function use_ruby_186 {
+ export MY_RUBY_HOME=~/.ruby_versions/ruby_186
  export GEM_HOME=~/.gem/ruby/1.8
  update_path
 }
 
-function use_ruby { use_ruby_from_leopard }
+function use_ruby { use_ruby_186 }
 
-function use_jruby_120 {
- export MY_RUBY_HOME=~/.ruby_versions/jruby-1.2.0
+function use_jruby_131 {
+ export MY_RUBY_HOME=~/.ruby_versions/jruby-1.3.1
  export GEM_HOME=~/.gem/jruby/1.8
  # Set jruby home to make nailgun happy.
- export JRUBY_HOME=/Users/abedra/.ruby_versions/jruby-1.2.0
+ export JRUBY_HOME=/Users/abedra/.ruby_versions/jruby-1.3.1
  update_path
 }
 
-function use_jruby { use_jruby_120 }
+function use_jruby { use_jruby_131 }
 
 function use_ruby_191 {
  export MY_RUBY_HOME=~/.ruby_versions/ruby_191
