@@ -9,6 +9,17 @@ function install_ruby_186 {
   use_ruby_186 && install_rubygems && install_basic_gems && cd ~
 }
 
+function install_ruby_187 {
+  mkdir -p ~/.ruby_versions && cd /tmp
+  curl -L -O ftp://ftp.ruby-lang.org/pub/ruby/ruby-1.8.7-p174.tar.bz2 &&
+  tar xjf ruby-1.8.7-p174.tar.bz2 &&
+  cd ruby-1.8.7-p174 &&
+  ./configure --prefix=$HOME/.ruby_versions/ruby_187 --enable-shared --enable-pthread &&
+  make && make install &&
+  rm -rf ruby-1.8.7-p174.tar.gz ruby-1.8.7-p174 &&
+  use_ruby_187 && install_rubygems && install_basic_gems && cd ~
+}
+
 function install_ruby_191 {
   mkdir -p ~/.ruby_versions && cd /tmp
   curl -L -O ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.1-p243.tar.gz &&

@@ -8,6 +8,12 @@ function use_ruby_186 {
 
 function use_ruby { use_ruby_186 }
 
+function use_ruby_187 {
+ export MY_RUBY_HOME=~/.ruby_versions/ruby_187
+ export GEM_HOME=~/.gem/ruby/1.87
+ update_path
+}
+
 function use_jruby_131 {
  export MY_RUBY_HOME=~/.ruby_versions/jruby-1.3.1
  export GEM_HOME=~/.gem/jruby/1.8

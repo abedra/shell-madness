@@ -27,3 +27,7 @@ function mysqlredo {
   mysqladmin drop $1
   mysqladmin create $1
 }
+
+function crypted_truths {
+  /Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt -t -k "" --protect-hidden=no ~/Documents/work ~/src/relevance
+}
