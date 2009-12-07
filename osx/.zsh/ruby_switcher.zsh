@@ -14,15 +14,13 @@ function use_ruby_187 {
  update_path
 }
 
-function use_jruby_131 {
- export MY_RUBY_HOME=~/.ruby_versions/jruby-1.3.1
+function use_jruby {
+ export MY_RUBY_HOME=~/.ruby_versions/jruby-1.4.0
  export GEM_HOME=~/.gem/jruby/1.8
  # Set jruby home to make nailgun happy.
- export JRUBY_HOME=/Users/abedra/.ruby_versions/jruby-1.3.1
+ export JRUBY_HOME=/Users/abedra/.ruby_versions/jruby-1.4.0
  update_path
 }
-
-function use_jruby { use_jruby_131 }
 
 function use_ruby_191 {
  export MY_RUBY_HOME=~/.ruby_versions/ruby_191
