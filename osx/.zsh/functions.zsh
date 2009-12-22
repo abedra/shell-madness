@@ -30,4 +30,9 @@ function mysqlredo {
 
 function crypted_truths {
   /Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt -t -k "" --protect-hidden=no ~/Documents/work ~/src/relevance
+  /Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt -t -k "" --protect-hidden=no ~/src/relevance/relevance_it/passwords2.tc
+}
+
+function vzb-ssh {
+  ssh -i ~/.ssh/vzb.ec2.pem root@$1
 }
