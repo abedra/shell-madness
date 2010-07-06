@@ -9,7 +9,5 @@ source ~/.zsh/aliases.zsh
 source ~/.zsh/bindkeys.zsh
 source ~/.zsh/functions.zsh
 source ~/.zsh/history.zsh
-source ~/.zsh/ruby_switcher.zsh
-source ~/.zsh/ruby_installer.zsh
 
-use_ruby_186
+if [[ -s /home/abedra/.rvm/scripts/rvm ]] ; then source /home/abedra/.rvm/scripts/rvm ; fi

@@ -1,9 +1,9 @@
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/home/abedra/idea-IU-95.66/bin:$PATH
 export CDPATH=.:~/src:~/src/personal:~/src/opensource:~/src/relevance:~/src/configs:~/Documents
 
-# Set default console Java to 1.6
-# export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
-
+export JAVA_HOME=/usr/lib/jvm/java-6-sun
+export JDK_HOME=/usr/lib/jvm/java-6-sun
+export CLOJURE_HOME=~/src/opensource/clojure
 # Setup terminal, and turn on colors
 export TERM=xterm-color
 export LSCOLORS=gxfxcxdxbxegedabagacad

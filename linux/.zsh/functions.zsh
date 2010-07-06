@@ -13,8 +13,3 @@ function zsh_recompile() {
 
   source ~/.zshrc
 }
-
-function mysqlredo {
-  mysqladmin drop $1
-  mysqladmin create $1
-}
