@@ -1,4 +1,4 @@
-export PATH=/usr/local/bin:/home/abedra/idea-IU-95.66/bin:$PATH
+export PATH=/usr/local/bin:/home/abedra/idea-IU-95.66/bin:~/src/opensource/etc/scripts:$PATH
 export CDPATH=.:~/src:~/src/personal:~/src/opensource:~/src/relevance:~/src/configs:~/Documents
 
 export JAVA_HOME=/usr/lib/jvm/java-6-sun
