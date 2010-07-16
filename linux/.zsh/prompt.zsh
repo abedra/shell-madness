@@ -33,10 +33,10 @@ function git_prompt_info() {
   local ref=$(git symbolic-ref HEAD 2> /dev/null)
   local gitst="$(git status 2> /dev/null)"
   local pairname=$(git config --get user.initials)
-  if [[ ${pairname} == 'ab' ]]; then
-    pairname=''
+  if [[ ${pairname} == '' ]]; then
+    pairname='(solo)'
   else
-    pairname=" ($pairname)"
+    pairname="($pairname)"
   fi
 
   if [[ -f .git/MERGE_HEAD ]]; then
