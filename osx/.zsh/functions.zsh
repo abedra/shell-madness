@@ -36,3 +36,27 @@ function crypted_truths {
 function vzb-ssh {
   ssh -i ~/.ssh/vzb.ec2.pem root@$1
 }
+
+function ss {
+  if [ -e script/rails ]; then
+    script/rails server $@
+  else
+    script/server $@
+  fi
+}
+
+function sc {
+  if [ -e script/rails ]; then
+    script/rails console $@
+  else
+    script/console $@
+  fi
+}
+
+function sg {
+  if [ -e script/rails ]; then
+    script/rails generate $@
+  else
+    script/generate $@
+  fi
+}

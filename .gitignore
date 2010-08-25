@@ -1,2 +1,3 @@
 linux/.zsh/*.zwc
 linux/.zsh/cache
+osx/.zsh/cache/*
