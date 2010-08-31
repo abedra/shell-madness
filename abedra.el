@@ -59,19 +59,8 @@
   (interactive) 
   (find-daypage))
 
-(defun tom-show-agenda () 
-  (interactive)
-  (delete-other-windows)
-  (org-agenda-list)
-  (calendar) 
-  (other-window 1) 
-  (split-window-vertically) 
-  (other-window 1) 
-  (todays-daypage))
-
 (global-set-key [f4] 'todays-daypage)
 (global-set-key [f5] 'find-daypage)
-(global-set-key [f6] 'tom-show-agenda)
 ;; END ORG MODE HOOKS
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
