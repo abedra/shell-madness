@@ -12,7 +12,7 @@
 (global-set-key [(hyper meta s)] 'save-some-buffers)
 (global-set-key [(hyper meta l)] 'longlines-mode)
 (global-set-key [(hyper b)] 'ido-switch-buffer)
-(global-set-key [(control G)] 'git-status)
+(global-set-key [(control G)] 'magit-status)
 (global-set-key [(meta s)] 'shell)
 (global-set-key [(hyper /)] 'comment-or-uncomment-region)
 (global-set-key [(hyper k)] (lambda () (interactive) (recenter 0)))

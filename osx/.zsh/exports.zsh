@@ -13,7 +13,6 @@ export CLOJURE_HOME=~/src/opensource/clojure
 
 # Setup terminal, and turn on colors
 export TERM=xterm-color
-export LSCOLORS=gxfxcxdxbxegedabagacad
 export CLICOLOR=1
 
 # Enable color in grep
