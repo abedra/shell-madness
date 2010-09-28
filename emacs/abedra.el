@@ -20,6 +20,17 @@
 ;; END ANDROID MODE
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ORG MODE
+(setq load-path (cons "~/.emacs.d/org-mode/lisp" load-path))
+(setq load-path (cons "~/.emacs.d/org-mode/contrib/lisp" load-path))
+(require 'org-install)
+(setq org-directory "~/notes/days")
+(setq org-mobile-files (quote ("~/notes/days")))
+(setq org-mobile-inbox-for-pull "~/notes/flagged.org")
+(setq org-mobile-directory "~/Dropbox/MobileOrg")
+;; END ORG MODE
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; SMEX
 (require 'smex)
 (eval-after-load "init.el" '(smex-initialize))
