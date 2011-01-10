@@ -10,6 +10,6 @@ alias rdoc='rdoc --ri --line-numbers --all'
 alias vi='vim'
 alias vim='vim'
 alias gvim='mvim -p'
-alias e='open -a Emacs'
+alias e='open -a Aquamacs'
 
 alias cycle_passenger='touch tmp/restart.txt'

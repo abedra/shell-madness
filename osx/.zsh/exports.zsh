@@ -1,5 +1,5 @@
 # Currently this path is appendend to dynamically when picking a ruby version
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/opt/local/lib/postgresql84/bin/:~/src/opensource/etc/scripts:~/src/opensource/android-sdk-mac_86:~/src/opensource/android-sdk-mac_86/tools:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/opt/local/lib/postgresql84/bin/:~/src/opensource/etc/scripts:~/src/opensource/android-sdk-mac_x86:~/src/opensource/android-sdk-mac_x86/tools:~/bin:$PATH
 
 # Our list of directorys we can cd to from anywhere
 export CDPATH=.:~/src:~/src/personal:~/src/opensource:~/src/relevance:~/src/configs:~/Documents

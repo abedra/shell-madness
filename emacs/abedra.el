@@ -1,3 +1,4 @@
+(setq inferior-lisp-program "script/repl")
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; COLOR THEME
 (color-theme-blackboard)
@@ -93,3 +94,9 @@
 (global-set-key [f1] 'slime-describe-symbol)
 (global-set-key [(meta f1)] 'swank-clojure-javadoc)
 ;; END CLOJURE TWEAKS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; KEYBINDING TWEAKS
+(define-key osx-key-mode-map (kbd "A-o") 'find-file)
+(tabbar-mode -1)
+;; END KEYBINDING TWEAKS

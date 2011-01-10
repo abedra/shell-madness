@@ -1,0 +1,59 @@
+[general]
+accounts = Relevance, Personal, GMail
+maxsyncaccounts = 3
+
+[Account Relevance]
+localrepository = LocalRelevance
+remoterepository = RemoteRelevance
+autorefresh = 5
+
+[Account Personal]
+localrepository = LocalPersonal
+remoterepository = RemotePersonal
+autorefresh = 10
+
+[Account GMail]
+localrepository = LocalGMail
+remoterepository = RemoteGMail
+autorefresh = 15
+
+[Repository LocalRelevance]
+type = Maildir
+localfolders = /Users/abedra/mail/Relevance
+
+[Repository LocalPersonal]
+type = Maildir
+localfolders = /Users/abedra/mail/Personal
+
+[Repository LocalGMail]
+type = Maildir
+localfolders = /Users/abedra/mail/GMail
+
+[Repository RemoteRelevance]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = xxxx
+remotepass = xxxx
+ssl = yes
+maxconnections = 1
+
+[Repository RemotePersonal]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = xxxx
+remotepass = xxxx
+ssl = yes
+maxconnections = 1
+
+[Repository RemoteGMail]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = xxxx
+remotepass = xxxx
+ssl = yes
+maxconnections = 1
+
+#Setting realdelete = yes will Really Delete email from the server.
+#Otherwise "deleting" a message will just remove any labels and 
+#retain the message in the All Mail folder.
+realdelete = no

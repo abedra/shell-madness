@@ -1,0 +1,17 @@
+set mbox_type=Maildir
+set folder=$HOME/mail
+set spoolfile=+"Relevance/INBOX"
+set move=no
+set realname='Aaron Bedra'
+set from='aaron@thinkrelevance.com'
+set envelope_from=yes
+set editor="emacs"
+
+mailboxes ! + `\
+  for file in ~/Maildir/.*; do \
+    box=$(basename "$file"); \
+    if [ ! "$box" = '.' -a ! "$box" = '..' -a ! "$box" = '.customflags' \
+      -a ! "$box" = '.subscriptions' ]; then \
+      echo -n "\"+$box\" "; \
+    fi; \
+  done`
