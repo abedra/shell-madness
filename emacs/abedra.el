@@ -24,8 +24,8 @@
 ;;; I use org-mode straight from the git repo. You need org-mode 6.3 or
 ;;; higher if you want to use MobileOrg and it doesn't ship with
 ;;; emacs.
-(setq load-path (cons "~/.emacs.d/org-mode/lisp" load-path))
-(setq load-path (cons "~/.emacs.d/org-mode/contrib/lisp" load-path))
+(setq load-path (cons "~/src/opensource/org-mode/lisp" load-path))
+(setq load-path (cons "~/src/opensource/org-mode/contrib/lisp" load-path))
 (require 'org-install)
 (setq org-directory "~/notes/days")
 (setq org-mobile-files (quote ("~/notes/days")))

@@ -1,5 +1,5 @@
-export PATH=/usr/local/bin:/home/abedra/idea-IU-95.66/bin:~/src/opensource/etc/scripts:$PATH
-export CDPATH=.:~/src:~/src/personal:~/src/opensource:~/src/relevance:~/src/configs:~/Documents
+export PATH=/usr/local/bin:/home/abedra/idea-IU-95.66/bin:~/src/opensource/etc/scripts:~/src/arduino/arduino-0021:$PATH
+export CDPATH=.:~/src:~/src/personal:~/src/opensource:~/src/relevance:~/src/configs:~/Documents:~/src/security
 
 export JAVA_HOME=/usr/lib/jvm/java-6-sun
 export JDK_HOME=/usr/lib/jvm/java-6-sun
