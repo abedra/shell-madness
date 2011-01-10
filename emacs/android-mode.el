@@ -35,7 +35,7 @@
   :prefix "android-mode-"
   :group 'applications)
 
-(defcustom android-mode-sdk-dir "~/Android/sdk"
+(defcustom android-mode-sdk-dir "/Users/abedra/src/opensource/android-sdk-mac_x86"
   "Set to the directory containing the Android SDK."
   :type 'string
   :group 'android-mode)
