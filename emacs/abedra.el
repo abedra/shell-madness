@@ -1,4 +1,15 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; EXPERIMENTAL SECTION
+(require 'erlang-start)
+(setq load-path (cons "~/src/opensource/kpm-list" load-path))
+(require 'kpm-list)
+;; END EXPERIMENTAL
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; INFERIOR LISP
 (setq inferior-lisp-program "script/repl")
+;; END INFERIOR LISP
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; COLOR THEME
 (color-theme-blackboard)
@@ -32,6 +43,11 @@
 (setq org-mobile-files (quote ("~/notes/days")))
 (setq org-mobile-inbox-for-pull "~/notes/days/flagged.org")
 (setq org-mobile-directory "~/Dropbox/MobileOrg")
+(setq org-log-done t)
+(setq org-agenda-files (list "~/notes/relevance.org"
+                             "~/notes/personal.org"
+                             "~/notes/clojure.org"
+                             "~/notes/songs.org"))
 ;; END ORG MODE
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -94,9 +110,3 @@
 (global-set-key [f1] 'slime-describe-symbol)
 (global-set-key [(meta f1)] 'swank-clojure-javadoc)
 ;; END CLOJURE TWEAKS
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; KEYBINDING TWEAKS
-(define-key osx-key-mode-map (kbd "A-o") 'find-file)
-(tabbar-mode -1)
-;; END KEYBINDING TWEAKS

@@ -1,4 +1,4 @@
-export PATH=/usr/local/bin:/home/abedra/idea-IU-95.66/bin:~/src/opensource/etc/scripts:~/src/arduino/arduino-0021:$PATH
+export PATH=/usr/local/bin:/home/abedra/idea-IC-99.32/bin:~/src/opensource/etc/scripts:~/src/arduino/arduino-0021:~/src/opensource/findbugs-1.3.9/bin:~/eclipse:~/src/opensource/android-sdk-linux_86/tools:$PATH
 export CDPATH=.:~/src:~/src/personal:~/src/opensource:~/src/relevance:~/src/configs:~/Documents:~/src/security
 
 export JAVA_HOME=/usr/lib/jvm/java-6-sun

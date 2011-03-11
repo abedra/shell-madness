@@ -13,3 +13,54 @@ function zsh_recompile() {
 
   source ~/.zshrc
 }
+
+function crypted_truths {
+    /usr/bin/truecrypt -t -k "" --protect-hidden=no ~/Documents/work ~/src/relevance
+    /usr/bin/truecrypt -t -k "" --protect-hidden=no ~/src/relevance/relevance_it/passwords2.tc
+}
+
+function extract {
+    echo Extracting $1 ...
+    if [ -f $1 ] ; then
+        case $1 in
+            *.tar.bz2)   tar xjf $1  ;;
+            *.tar.gz)    tar xzf $1  ;;
+            *.bz2)       bunzip2 $1  ;;
+            *.rar)       rar x $1    ;;
+            *.gz)        gunzip $1   ;;
+            *.tar)       tar xf $1   ;;
+            *.tbz2)      tar xjf $1  ;;
+            *.tgz)       tar xzf $1  ;;
+            *.zip)       unzip $1   ;;
+            *.Z)         uncompress $1  ;;
+            *.7z)        7z x $1  ;;
+            *)           echo "'$1' cannot be extracted via extract()" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
+}
+
+function ss {
+    if [ -e script/rails ]; then
+        script/rails server $@
+    else
+        script/server $@
+    fi
+}
+
+function sc {
+    if [ -e script/rails ]; then
+        script/rails console $@
+    else
+        script/console $@
+    fi
+}
+
+function sg {
+    if [ -e script/rails ]; then
+        script/rails generate $@
+    else
+        script/generate $@
+    fi
+}
